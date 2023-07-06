@@ -1,0 +1,48 @@
+<ul class="remote-menu">
+  <li>
+    <a
+      [ngClass]="{ active: activeItem === 0 }"
+      (click)="setActiveItem(0)"
+      routerLink="/"
+      >Shell</a
+    >
+  </li>
+  <li>
+    <a
+      [ngClass]="{ active: activeItem === 1 }"
+      (click)="setActiveItem(1)"
+      routerLink="microfront-angular"
+      >Microfront Angular</a
+    >
+  </li>
+  <li>
+    <a
+      [ngClass]="{ active: activeItem === 2 }"
+      (click)="setActiveItem(2)"
+      routerLink="microfront-react"
+      >Microfront React same Mr</a
+    >
+  </li>
+  <li>
+    <a
+      [ngClass]="{ active: activeItem === 3 }"
+      (click)="setActiveItem(3)"
+      routerLink="react"
+      >React Architects</a
+    >
+  </li>
+  <li>
+    <a
+      [ngClass]="{ active: activeItem === 4 }"
+      (click)="setActiveItem(4)"
+      routerLink="vue"
+      >Vue Architects</a
+    >
+  </li>
+</ul>
+
+<body>
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</body>

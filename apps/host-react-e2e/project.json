@@ -1,0 +1,34 @@
+{
+  "name": "host-react-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/host-react-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/host-react-e2e/cypress.config.ts",
+        "devServerTarget": "host-react:serve:development",
+        "testingType": "e2e",
+        "baseUrl": "http://localhost:4300"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "host-react:serve:production"
+        },
+        "ci": {
+          "devServerTarget": "host-react:serve-static"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/host-react-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["host-react"]
+}
