@@ -1,12 +1,14 @@
-# Introduction 
-First proyect with Nx for Shell+MicroFrontends implementation
+# Nx + Angular-arrchitects demo-project
 
-# Getting Started
+## Introduction 
+First project with Nx for Shell+MicroFrontends implementation, demo with Angular + React and Angular-architects
+
+## Getting Started
 1.	npm install
 2.	npx nx run ourHostName:serve
 
-# Steps to create this proyect in cmd
-1. Create an empty Monorepo workspace named "ts-multi-shl-siep-host".
+## Steps to create this proyect in cmd
+1. Create an empty Monorepo workspace named _ts-multi-shl-siep-host_.
   1. 1. npx create-nx-workspace ts-multi-shl-siep-host --preset=apps --workspace-type=integrated --nx-cloud=false
 
 2. Open the VSC
@@ -19,7 +21,7 @@ First proyect with Nx for Shell+MicroFrontends implementation
 	3. 2. React
           npm install --save-dev @nx/react
 
-4. Create the host named "ts-ng-shl-siep-host/ts-rt-shl-siep-host" and one remote with dynamic charge "ts-ng-mff-siep-login/ts-rt-mff-siep-form".
+4. Create the host named _ts-ng-shl-siep-host/ts-rt-shl-siep-host_ and one remote with dynamic charge _ts-ng-mff-siep-login/ts-rt-mff-siep-form_.
 	4. 1. Angular
           nx g @nx/angular:host ts-ng-shl-siep-host --remotes=ts-ng-mff-siep-login --dynamic --style=scss
 	4. 2. React
@@ -40,7 +42,7 @@ First proyect with Nx for Shell+MicroFrontends implementation
 	7. 2. React
           npx nx run ts-rt-shl-siep-host:serve
 
-8. If we see an error, update the migrations and do "npm install"
+8. If we see an error, update the migrations and do _npm install_
  	8. 1. nx migrate latest
 	8. 2. npm install
 	
