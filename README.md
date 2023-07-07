@@ -7,6 +7,9 @@ First project with **Nx** for **Shell** + **MicroFrontends** implementation, dem
 
 ```
 npm install
+```
+
+```
 npx nx run ts-multi-shl-siep-demo-nx:serve
 ```
 
