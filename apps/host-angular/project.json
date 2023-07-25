@@ -2,7 +2,6 @@
   "name": "host-angular",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "prefix": "test",
   "sourceRoot": "apps/host-angular/src",
   "tags": [],
   "targets": {
@@ -56,7 +55,9 @@
       "executor": "@nx/angular:module-federation-dev-server",
       "options": {
         "port": 4200,
-        "publicHost": "http://localhost:4200"
+        "publicHost": "http://localhost:4200",
+        "skipRemotes": ["http-mfe-angular"],
+        "open": true
       },
       "configurations": {
         "production": {

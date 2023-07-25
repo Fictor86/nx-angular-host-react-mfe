@@ -7,9 +7,6 @@ First project with **Nx** for **Shell** + **MicroFrontends** implementation, dem
 
 ```
 npm install
-```
-
-```
 npx nx run ts-multi-shl-siep-demo-nx:serve
 ```
 
@@ -17,13 +14,13 @@ npx nx run ts-multi-shl-siep-demo-nx:serve
 1. Create an empty Monorepo workspace named _ts-multi-shl-siep-demo-nx_
 
 ```
-npx create-nx-workspace ts-multi-shl-siep-host --preset=apps --workspace-type=integrated --nx-cloud=false
+npx create-nx-workspace ts-multi-shl-siep-demo-nx --preset=apps --workspace-type=integrated --nx-cloud=false
 ```
 
 2. Open the VSC
 
 ```
-cd ts-multi-shl-siep-host
+cd ts-multi-shl-siep-demo-nx
 code .
 ```
 
@@ -39,28 +36,28 @@ npm install --save-dev @nx/angular
 npm install --save-dev @nx/react
 ```
 
-4. Create the host named _ts-ng-shl-siep-host/ts-rt-shl-siep-host_ and one remote with dynamic charge _ts-ng-mff-siep-login/ts-rt-mff-siep-form_.
+4. Create the host named _host-angular/host-react_ and one remote with dynamic charge _microfront-angular/microfront-react_.
 
 - Angular
 ```
-nx g @nx/angular:host ts-ng-shl-siep-host --remotes=ts-ng-mff-siep-login --dynamic --style=scss
+nx g @nx/angular:host host-angular --remotes=microfront-angular --addTailwind=true --dynamic --style=scss
 ```
 
 - React
 ```
-nx g @nx/react:host ts-rt-shl-siep-host --remotes=ts-rt-mff-siep-form --style=scss
+nx g @nx/react:host host-react --remotes=microfront-react --addTailwind=true --style=scss
 ```
 
 5. To add more MF related to our host, use this command.
 
 - Angular
 ```
-nx g @nx/angular:remote ts-ng-mff-siep-cart --style=scss --host=ts-ng-shl-siep-host
+nx g @nx/angular:remote microfront-angular-two --addTailwind=true --port=4202 --style=scss --host=host-angular
 ```
 
 - React
 ```
-nx g @nx/react:remote ts-rt-mff-siep-home --style=scss --host=ts-rt-shl-siep-host
+nx g @nx/react:remote microfront-react-two --addTailwind=true --port=4302 --style=scss --host=host-react
 ```
 
 6. Create Shared Library
@@ -73,19 +70,15 @@ npx nx generate @nx/js:library utils --unitTestRunner=jest --directory=shared --
 	
 - Angular
 ```
-npx nx run ts-ng-shl-siep-host:serve
+npx nx run host-angular:serve
 ```
 
 - React
 ```
-npx nx run ts-rt-shl-siep-host:serve
+npx nx run host-react:serve
 ```
 
-8. If we see an error, update the migrations with _nx migrate latest_ and do _npm install_
-
-```
-nx migrate latest
-```
+8. If we see an error, redo _npm install_
 
 ```
 npm install
@@ -95,10 +88,10 @@ npm install
 
 - Angular
 ```
-npx nx run ts-ng-shl-siep-host:serve
+npx nx run host-angular:serve
 ```
 
 - React
 ```
-npx nx run ts-rt-shl-siep-host:serve
+npx nx run host-react:serve
 ```

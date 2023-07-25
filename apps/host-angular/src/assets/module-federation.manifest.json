@@ -1,4 +1,5 @@
 {
   "microfront-angular": "http://localhost:4201/remoteEntry.mjs",
-  "microfront-react": "http://localhost:4301/remoteEntry.js"
+  "http-mfe-angular": "http://localhost:4202/remoteEntry.mjs",
+  "a14-remote": "http://localhost:4401/remoteEntry.mjs"
 }

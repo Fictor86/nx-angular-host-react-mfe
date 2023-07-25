@@ -2,7 +2,6 @@
   "name": "microfront-angular",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "prefix": "test",
   "sourceRoot": "apps/microfront-angular/src",
   "tags": [],
   "targets": {
@@ -59,7 +58,8 @@
       "executor": "@nx/angular:webpack-dev-server",
       "options": {
         "port": 4201,
-        "publicHost": "http://localhost:4201"
+        "publicHost": "http://localhost:4201",
+        "open": true
       },
       "configurations": {
         "production": {

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'test-microfront-angular-entry',
-  template: `<test-home></test-home>`,
+  selector: 'microfront-angular-entry',
+  template: `<home></home>`,
 })
 export class RemoteEntryComponent {}
