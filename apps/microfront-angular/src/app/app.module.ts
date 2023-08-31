@@ -13,7 +13,7 @@ import { AppComponent } from './app.component';
           path: '',
           loadChildren: () =>
             import('./remote-entry/entry.module').then(
-              (m) => m.RemoteEntryForLocalMfeAg
+              (m) => m.RemoteEntryForLocalMfeNg
             ),
         },
       ],

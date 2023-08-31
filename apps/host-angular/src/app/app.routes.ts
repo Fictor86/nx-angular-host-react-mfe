@@ -17,7 +17,7 @@ export const appRoutes: Route[] = [
     path: 'microfront-angular',
     loadChildren: () =>
       loadRemoteModule('microfront-angular', './Module').then(
-        (m) => m.RemoteEntryForLocalMfeAg
+        (m) => m.RemoteEntryForLocalMfeNg
       ),
   },
   {

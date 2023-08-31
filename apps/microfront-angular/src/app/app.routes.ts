@@ -4,6 +4,6 @@ export const appRoutes: Route[] = [
   {
     path: '',
     loadChildren: () =>
-      import('./remote-entry/entry.module').then((m) => m.RemoteEntryForLocalMfeAg),
+      import('./remote-entry/entry.module').then((m) => m.RemoteEntryForLocalMfeNg),
   },
 ];

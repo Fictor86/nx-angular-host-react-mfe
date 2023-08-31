@@ -22,8 +22,7 @@
         "styles": ["apps/http-mfe-react/src/styles.scss"],
         "scripts": [],
         "isolatedConfig": true,
-        "webpackConfig": "apps/http-mfe-react/webpack.config.js",
-        "postcssConfig": "apps/http-mfe-react/postcss.config.js"
+        "webpackConfig": "apps/http-mfe-react/webpack.config.js"
       },
       "configurations": {
         "development": {

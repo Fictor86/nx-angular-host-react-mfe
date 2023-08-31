@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  host-angular:
+    build:
+      context: .
+      args:
+        APP_NAME: 'host-angular'
+    container_name: host-angular
+    networks:
+      - mfe_network
+
+  microfront-angular:
+    build:
+      context: .
+      args:
+        APP_NAME: 'microfront-angular'
+    container_name: microfront-angular
+    networks:
+      - mfe_network
+
+  http-mfe-react:
+    build:
+      context: .
+      args:
+        APP_NAME: 'http-mfe-react'
+    container_name: http-mfe-react
+    networks:
+      - mfe_network
+
+  gateway:
+    image: nginx:alpine
+    ports:
+      - '80:80'
+    volumes:
+      - ./nginx.gateway.conf:/etc/nginx/conf.d/default.conf
+    networks:
+      - mfe_network
+
+networks:
+  mfe_network:
+    driver: bridge

@@ -11,4 +11,4 @@ import { HomeComponent } from '../home/home.component';
   imports: [CommonModule, RouterModule.forChild(remoteRoutes)],
   providers: [],
 })
-export class RemoteEntryForLocalMfeAg {}
+export class RemoteEntryForLocalMfeNg {}
