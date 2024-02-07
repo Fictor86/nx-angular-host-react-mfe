@@ -22,16 +22,16 @@ docker-compose up --build
 ```
 
 ## Steps to create this proyect in cmd
-1. Create an empty Monorepo workspace named _ts-multi-shl-siep-demo-nx_
+1. Create an empty Monorepo workspace named _nx-angular-host-react-mfe_
 
 ```
-npx create-nx-workspace ts-multi-shl-siep-demo-nx --preset=apps --workspace-type=integrated --nx-cloud=false
+npx create-nx-workspace nx-angular-host-react-mfe --preset=apps --workspace-type=integrated
 ```
 
 2. Open the VSC
 
 ```
-cd ts-multi-shl-siep-demo-nx
+cd nx-angular-host-react-mfe
 ```
 
 ```
