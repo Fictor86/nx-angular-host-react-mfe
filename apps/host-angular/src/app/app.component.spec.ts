@@ -1,7 +1,7 @@
 import { fakeAsync, TestBed, tick } from '@angular/core/testing';
-import { AppComponent } from './app.component';
-import { RouterTestingModule } from '@angular/router/testing';
 import { Router } from '@angular/router';
+import { RouterTestingModule } from '@angular/router/testing';
+import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 
 describe('AppComponent', () => {
@@ -36,7 +36,7 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('h1')?.textContent).toContain(
-      'Welcome host-angular'
+      'MONOREPO ANGULAR ~16.0.0 HOST'
     );
   }));
 });

@@ -10,6 +10,6 @@ describe('App', () => {
 
   it('should have a greeting as the title', () => {
     const { getByText } = render(<App />);
-    expect(getByText(/Welcome http-mfe-react/gi)).toBeTruthy();
+    expect(getByText(/MONOREPO REACT 18.2.0 MFE/gi)).toBeTruthy();
   });
 });
