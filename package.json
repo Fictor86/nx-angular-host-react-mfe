@@ -19,9 +19,9 @@
     "@angular/language-service": "16.2.3",
     "@babel/preset-react": "^7.14.5",
     "@nx/angular": "16.7.4",
-    "@nx/cypress": "^16.7.4",
+    "@nx/cypress": "18.2.4",
     "@nx/eslint-plugin": "16.7.4",
-    "@nx/jest": "16.7.4",
+    "@nx/jest": "18.2.4",
     "@nx/js": "16.7.4",
     "@nx/linter": "16.7.4",
     "@nx/react": "16.7.4",
@@ -54,7 +54,7 @@
     "jest-environment-jsdom": "^29.4.1",
     "jest-preset-angular": "~13.1.0",
     "ngx-build-plus": "^16.0.0",
-    "nx": "16.7.4",
+    "nx": "18.2.4",
     "postcss": "8.4.21",
     "prettier": "^2.6.2",
     "react-refresh": "^0.10.0",
@@ -62,7 +62,8 @@
     "ts-node": "10.9.1",
     "typescript": "5.1.6",
     "url-loader": "^4.1.1",
-    "verdaccio": "^5.0.4"
+    "verdaccio": "^5.0.4",
+    "@nx/eslint": "18.2.4"
   },
   "dependencies": {
     "@angular-architects/module-federation-tools": "^16.0.4",

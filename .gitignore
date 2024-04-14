@@ -19,7 +19,6 @@ node_modules
 .c9/
 .settings/
 
-
 # misc
 /.sass-cache
 /connect.lock
@@ -37,3 +36,6 @@ Thumbs.db
 
 # lock
 package-lock.json
+
+#nx
+*.nx
